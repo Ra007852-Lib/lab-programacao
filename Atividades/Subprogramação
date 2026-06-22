@@ -1,3 +1,4 @@
+Exercício 01
 def status_aluno(media):
     if media > 6:
         return "Aprovado"
@@ -8,6 +9,7 @@ def status_aluno(media):
 media = float(input("Digite a média do aluno: "))
 print("Status:", status_aluno(media))
 
+Exercício 02
 def celsius_para_fahrenheit(celsius):
     fahrenheit = celsius * 1.8 + 32
     return fahrenheit
