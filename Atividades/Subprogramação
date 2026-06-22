@@ -1,0 +1,16 @@
+def status_aluno(media):
+    if media > 6:
+        return "Aprovado"
+    elif media >= 4:
+        return "Verificação Suplementar"
+    else:
+        return "Reprovado"
+media = float(input("Digite a média do aluno: "))
+print("Status:", status_aluno(media))
+
+def celsius_para_fahrenheit(celsius):
+    fahrenheit = celsius * 1.8 + 32
+    return fahrenheit
+temperatura = float(input("Digite a temperatura em Celsius: "))
+resultado = celsius_para_fahrenheit(temperatura)
+print("Temperatura em Fahrenheit:", resultado)
