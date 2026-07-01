@@ -16,3 +16,31 @@ def celsius_para_fahrenheit(celsius):
 temperatura = float(input("Digite a temperatura em Celsius: "))
 resultado = celsius_para_fahrenheit(temperatura)
 print("Temperatura em Fahrenheit:", resultado)
+
+Exercício 03
+def permitir_acesso(ano_nascimento):
+    idade = 2026 - ano_nascimento
+    if idade >= 18:
+        return True
+    else:
+        return False
+    
+print("--- VALIDADOR DE SISTEMA ---")
+ano = int(input("Em qual ano você nasceu? "))
+
+if permitir_acesso(ano):
+    print("Acesso liberado ao sistema. Bem-vindo!")
+else:
+    print("Acesso bloqueado. Apenas para maiores de 18 anos")
+
+Exercício 04
+def exibir_cabecalho(texto):
+    print("*"*len(texto))
+    print(texto)
+    print("*"*len(texto))
+
+exibir_cabecalho("MENU PRINCIPAL")
+print("1 - Cadastrar Cliente ")
+print("2 - Buscar no banco de dados ")
+print("3 - Sair ")
+exibir_cabecalho("FIM DO SISTEMA")
